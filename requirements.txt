@@ -5,3 +5,4 @@ black==24.4.2
 isort==5.13.2
 SQLAlchemy==2.0.36
 passlib==1.7.4
+email_validator==2.2.0
