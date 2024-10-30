@@ -1,5 +1,5 @@
 from .registry import mapper_registry
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String 
 
 @mapper_registry.mapped
 class User:
@@ -9,7 +9,7 @@ class User:
     username = Column(String, nullable=False, unique=True)
     email = Column(String, nullable=False, unique=True )
     hashed_password = Column(String)
-    is_active = Column(Boolean , default = False)
+    is_active = Column(bool , default = False)
 
     def __repr__(self):
         return f"[User({self.username}, {self.email})]"
