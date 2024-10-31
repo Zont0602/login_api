@@ -4,6 +4,6 @@ from models.registry import mapper_registry
 
 engine = create_engine("sqlite:///user.db" , echo=True)
 with engine.begin() as connection:
-    mapper_registry.meradata.create_all(connection)
+    mapper_registry.metadata.create_all(connection)
 
 Session = sessionmaker(bind=engine)
